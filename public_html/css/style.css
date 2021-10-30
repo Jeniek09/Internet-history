@@ -19,6 +19,19 @@ body, html {
     background-size: cover;
     position: relative;
 }
+/* background class */
+.backg {
+    background-color: lightgrey;
+}
+
+.backg1 {
+    background-image: url("../images/background_img.jpg");
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -65,4 +78,44 @@ body, html {
     transform: translate(-30%, -30%);
     color: red;
 
+}
+.hist_body {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: xx-large;
+    font-style: inherit;
+    text-align: justify;
+    color: #282828;
+}
+
+
+/* footer class */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: grey;
+    font-size: medium;
+    text-align: center;
+}
+
+<!-- not used -->
+.box{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+}
+.wrapper {
+
+    background-color: antiquewhite;
+
+    width: 90%;
+}
+.menu {
+    position: static;
+    top: 10px;
+    background-color: green;
 }
