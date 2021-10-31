@@ -87,7 +87,41 @@ body, html {
     text-align: justify;
     color: #282828;
 }
+.dotcom_title {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    font-style: inherit;
+    text-align: justify;
+    color: #282828;
+}
 
+.dotcom_body {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+    font-style: inherit;
+    text-align: justify;
+    color: #282828;
+}
+.internet2_title {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    font-size: 60px;
+    font-style: inherit;
+    text-align: justify;
+    color: #282828;
+}
+.internet2_body {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: large;
+    font-style: inherit;
+    text-align: justify;
+    color: #282828;
+}
 
 /* footer class */
 .footer {
