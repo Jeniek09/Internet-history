@@ -25,12 +25,17 @@ body, html {
 }
 
 .backg1 {
-    background-image: url("../images/background_img.jpg");
+    background-image: url("../images/backg.jpg");
     background-color: lightgrey;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+    background-size: 100% 175%;
 }
+.backg2 {
+     background-image: url("../images/backg.jpg");
+     background-color: lightgrey;
+     background-repeat: no-repeat;
+     background-size: 100% 275%;
+ }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -66,7 +71,9 @@ body, html {
     display: none;
 }
 
-
+.social {
+    height: 1%;
+}
 /* Place text in the middle of the image */
 .hero-text {
     margin-top: 10px;
@@ -88,68 +95,48 @@ body, html {
     color: #282828;
 }
 .dotcom_title {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     font-size: 60px;
-    font-style: inherit;
-    text-align: justify;
+    text-align: center;
     color: #282828;
 }
 
 .dotcom_body {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: large;
+    font-size: 20px;
     font-style: inherit;
     text-align: justify;
     color: #282828;
 }
 .internet2_title {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     font-size: 60px;
     font-style: inherit;
-    text-align: justify;
+    text-align: center;
     color: #282828;
 }
 .internet2_body {
     padding-left: 50px;
     padding-right: 50px;
-    font-size: large;
+    font-size: 20px;
     font-style: inherit;
     text-align: justify;
     color: #282828;
 }
-
 /* footer class */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: grey;
+    color: black;
     font-size: medium;
     text-align: center;
+
 }
 
-<!-- not used -->
-.box{
-    background-color: aquamarine;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-}
-.wrapper {
-
-    background-color: antiquewhite;
-
-    width: 90%;
-}
-.menu {
-    position: static;
-    top: 10px;
-    background-color: green;
-}
