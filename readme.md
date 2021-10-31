@@ -4,11 +4,11 @@ History of Internet - IS601
 
 ***
 
-##Creator
+## Creator
 Jenie Kunnipparampil
 ***
 
-##Website Location
+## Website Location
 * [Website URL](http://thejenieproject.eastus.azurecontainer.io): Version 1.0
 ***
 
@@ -35,7 +35,7 @@ The project further talks about the history of Internet; the conception of the t
 ### Github Location
 * [Github URL](https://github.com/Jeniek09/Internet-history)
 
-##How to Use:
+## How to Use:
 ***
 * The Github repo consists of all the files that are used to build the website
 * In those files you'll see the codes used to produce each page in the Internet: Then vs. Now website.
