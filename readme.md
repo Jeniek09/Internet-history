@@ -1,5 +1,5 @@
-<h1 align="center">
-History of Internet - IS601
+<h1 class="center">
+Class IS601 - History of Internet
 </h1>
 
 ***
@@ -9,8 +9,14 @@ Jenie Kunnipparampil
 ***
 
 ## Website Location
-* [Website URL](http://thejenieproject.eastus.azurecontainer.io): Version 1.0
+* [Website URL](http://thejenieproject.eastus.azurecontainer.io): Version 2.0 (Updated : 2021-11-25)
+    <br />
 ***
+## Updates
+* Updated the Layout of all the pages 
+* Updated the Navbar to now be a dropdown and responsive to different media devices
+* Introduced media queries to ensure that the pages, embedded images and videos do not get distorted when viewed on different devices
+* Changed the footer so that it does not float over the page content
 
 ## Table of Contents
 <a name="general-info"></a>
@@ -42,7 +48,7 @@ The project further talks about the history of Internet; the conception of the t
 * This Readme.md file contains the [Website URL](http://thejenieproject.eastus.azurecontainer.io) that
 will take you to the azure cloud location where this website is hosted.
 
-
+  
 ## Technologies
 ***
 A list of technologies used within the project:
@@ -57,6 +63,5 @@ A list of technologies used within the project:
 
 ## What's Next?
 ***
-* Adjust Nav bar display to make it more dynamic and interactive
 * Use data to create interactive graphs and models
 

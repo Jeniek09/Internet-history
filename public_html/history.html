@@ -1,73 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-<!-- Title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title -->
     <title>History</title>
-<!-- css Stylesheet location-->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css Stylesheet location-->
     <link rel="stylesheet" href="css/style.css">
-<!-- Browser tab icon-->
+    <!-- Browser tab icon-->
     <link rel="icon" type="image/png" href="images/logo.png">
-<!-- CSS Code for the Navbar-->
+    <!-- CSS Code for the Navbar-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" style="font-size:20px; color:#ff8a00; margin-right: 20px" href="index.html"><img src = "images/logo.png" alt="logo" width="40" height="35"><b> Internet: Then vs Now</b></a>
-        <div class="navbar-collapse collapse show" id="navbarNav" style>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link active" href="history.html">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dotcom_bubble.html">DOTcom Bubble</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="internet_2.0.html">Internet 2.0</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- CSS Code for the Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Navbar Javascript -->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
-<!-- Background color-->
-<body class="backg1">
-<!-- Page Title-->
-    <ul style="font-size:80px; color: #c24e00; text-align: center; padding-top: 20px;">
-        <div class="container-fluid"><b>Where it all began...</b></div>
-    </ul>
-<!-- Embedding Youtube videos in the HTML page -->
-<div>
-    <div style = "padding-left: 50px;">
-        <iframe style="float:left;border: 3px solid #3c89d0; margin-right:50px;margin-top:50px; display:block;" width="60%" height="700" src="https://www.youtube.com/embed/km9-XQZkOSE" title="YouTube Video Player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<body class="backg">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" style="font-size:20px; padding-left: 20px" class="active">the<b>JenieProject</b></a>
+        <!--
+            <a class="navbar-brand" style="font-size:20px; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo"><b>theJenieProject</b></a>
+        -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#">Internet Project</a>
+            <a href="index.html">&#x27A4; Internet: Then vs Now</a>
+            <a href="history.html">&#x27A4; History</a>
+            <a href="dotcom_bubble.html">&#x27A4; DOTcom Bubble</a>
+            <a href="internet_2.0.html">&#x27A4; Internet 2.0</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
-    <p class = "hist_body" ><br/>The very first idea was envisioned by a psychologist and computer scientist <b>J C R Licklider</b>,
-        who conceptualized that if computers communicate better with each other, it will therefore make it
-        better for humans to connect and share information.</p></br>
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">Where it all began...</h1>
+        </div>
+    </header>
 
-    <p class = "hist_body"> <b>Leonard Kleinrock</b> theorized the foundations of communication in computer networking with his queuing
-        theory where small packets of information was passed through the computer network mesh from one node
-        to another. Advanced Research Projects Agency (ARPA) combined their interface messaging processor and
-        packet switching communication system allowing multiple computers to communicate to each other on a single network.</p></br>
+    <!-- Embedding Youtube videos in the HTML page -->
+    <div class="bg-darkgrey">
+        <div class="container">
+            <!--<div class="ifram-container">
+                <iframe style="float:left;border: 3px solid #3c89d0; margin-right:50px;margin-top:50px; display:block;" width="60%" height="700" src="https://www.youtube.com/embed/km9-XQZkOSE" title="YouTube Video Player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>-->
 
-    <p class = "hist_body"> In the years that followed, engineers <b>Vinton Cerf</b> (also known as 'Father of the internet') and <b>Robert
-        Cahn</b> developed a communication model that standardized data transmission through multiple networks,
-        they called it the Transmission Control Protocol (TCP) and Internet Protocol (IP). Then further with
-        the help of the English computer scientist <b>Tim Berners-Lee</b> the World Wide Web came into existence, this
-        software made it easy to follow threads of knowledge on the internet without being a computer whiz. And
-        by early 1990s there were approximately 50 functioning websites on the internet.</p></br>
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/km9-XQZkOSE' allowfullscreen>
+                </iframe>
+            </div>
 
-    <p class = "hist_body"; style="color: #cc5500"><b>Simply explained it is a tangle physical system made to move information from point A to point B.
-        This information is chopped up into small pieces and each of this piece has a header that indicates
-        the deriving and receiving destination points. The moving of these data enables us to chat, browse and share content.</b></p> </br>
-</div>
-<br/>
-<br/>
-<!-- Adding a footer to the bottom of the page -->
-<footer class ="footer">
-    <p class="copyright">&#169;Jenie Kunnipparampil. All Rights Reserved. <img src="images/w3c.png" alt="validator"></p>
-</footer>
+            <div>
+                <p><br/>The very first idea was envisioned by a psychologist and computer scientist <b>J C R Licklider</b>,
+                    who conceptualized that if computers communicate better with each other, it will therefore make it
+                    better for humans to connect and share information.</p><br/>
+                <p> <b>Leonard Kleinrock</b> theorized the foundations of communication in computer networking with his queuing
+                    theory where small packets of information was passed through the computer network mesh from one node
+                    to another. Advanced Research Projects Agency (ARPA) combined their interface messaging processor and
+                    packet switching communication system allowing multiple computers to communicate to each other on a single network.</p><br/>
+                <p> In the years that followed, engineers <b>Vinton Cerf</b> (also known as 'Father of the internet') and <b>Robert
+                    Cahn</b> developed a communication model that standardized data transmission through multiple networks,
+                    they called it the Transmission Control Protocol (TCP) and Internet Protocol (IP). Then further with
+                    the help of the English computer scientist <b>Tim Berners-Lee</b> the World Wide Web came into existence, this
+                    software made it easy to follow threads of knowledge on the internet without being a computer whiz. And
+                    by early 1990s there were approximately 50 functioning websites on the internet.</p><br/>
+                </div>
+        </div>
+    </div>
+    <div class="bg-accent">
+        <div class="container">
+        <p style="color: #cc5500;"><b>Simply explained it is a tangle physical system made to move information from point A to point B.
+            This information is chopped up into small pieces and each of this piece has a header that indicates
+            the deriving and receiving destination points. The moving of these data enables us to chat, browse and share content.</b></p> <br/>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <!-- Adding a footer to the bottom of the page -->
+    <footer>
+        <div class="container-footer">
+            <div id="footer">
+                <div id="footer-images">
+                    <ul style="margin-bottom: 0;">
+                        <li class="pull-center">&#169;Jenie Kunnipparampil. All Rights Reserved.</li>
+                        <li class="pull-right">
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fthejenieproject.eastus.azurecontainer.io%2Findex.html"><img src="images/w3c.png" alt="validator"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

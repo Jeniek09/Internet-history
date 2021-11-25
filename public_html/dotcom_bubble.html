@@ -2,115 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!-- Title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DOTcom Bubble</title>
-<!-- css Stylesheet location-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css Stylesheet location-->
     <link rel="stylesheet" href="css/style.css">
-<!-- Browser tab icon-->
+    <!-- Browser tab icon-->
     <link rel="icon" type="image/png" href="images/logo.png">
-<!-- CSS Code for the Navbar-->
+    <!-- CSS Code for the Navbar-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" style="font-size:20px; color:#ff8a00; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo" width="40" height="35"><b> Internet: Then vs Now</b></a>
-        <div class="navbar-collapse collapse show" id="navbarNav" style>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="history.html">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="dotcom_bubble.html">DOTcom Bubble</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="internet_2.0.html">Internet 2.0</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- CSS Code for the Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
-<!-- Background color-->
-<body class="backg2">
-<!-- Page Title-->
-    <ul style="font-size:80px; color: #c24e00; text-align: center;">
-        <div class="container-fluid"><b>90's “Dot-com” Frenzy <br/>
-            and<br/> The Rise of the E-commerce Revolution</b></div>
-    </ul>
-<!-- Subtitle_1-->
-    <ul class="dotcom_title"><br/>
-        Understanding Bubble
-    </ul>
-<!-- Text container-->
-    <ul>
+
+<body>
+<!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" style="font-size:20px; padding-left: 20px" class="active">the<b>JenieProject</b></a>
+        <!--
+            <a class="navbar-brand" style="font-size:20px; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo"><b>theJenieProject</b></a>
+        -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#">Internet Project</a>
+            <a href="index.html">&#x27A4; Internet: Then vs Now</a>
+            <a href="history.html">&#x27A4; History</a>
+            <a href="dotcom_bubble.html">&#x27A4; DOTcom Bubble</a>
+            <a href="internet_2.0.html">&#x27A4; Internet 2.0</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">The 90's “Dot-com” Frenzy and Rise of the E-commerce Revolution</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-darkgrey">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="./images/click.jpg" alt="click" width="700" height="400">
+            <h2 class = "text-center">Understanding Bubble</h2>
+            <div class="split">
+                <div>
+                    <p>Between the years of 1995 -2000 companies like Amazon and eBay introduced the e-commerce aspect of the internet.
+                        Both these companies generated large profits and took the gamble of going public within a few years of being a start-up.
+                        In a matter of weeks, Amazon’s stock prices skyrocketed and eBay was slowly following the same route, this led the venture
+                        capitalist and stock investors to suddenly invest in companies that are ending with a “.com”.</p>
+                    <p>This drove many startups and individuals to create bogus dot com e-commerce companies to get their investments
+                        from wall street and get big quickly. As there was no set marker to evaluate which companies would sink or float, Venture capital
+                        and investment banks took the risk of investing millions in many companies (dot com) to avoid missing out on an opportunity.</p>
+
                 </div>
-                <div class="col">
-                    <p class="dotcom_body">Between the years of 1995 -2000 companies like Amazon and eBay introduced the e-commerce aspect of the internet.
-                    Both these companies generated large profits and took the gamble of going public within a few years of being a start-up.
-                    In a matter of weeks, Amazon’s stock prices skyrocketed and eBay was slowly following the same route, this led the venture
-                    capitalist and stock investors to suddenly invest in companies that are ending with a “.com”. This drove many startups and
-                    individuals to create bogus dot com e-commerce companies to get their investments from wall street and get big quickly.
-                    As there was no set marker to evaluate which companies would sink or float, Venture capital and investment banks took the
-                    risk of investing millions in many companies (dot com) to avoid missing out on an opportunity.<p/>
+                <div>
+                    <img src="./images/click.jpg" alt="click" width="700" height = "600"/>
+                    <!--width="500" height="400"-->
                 </div>
             </div>
         </div>
-    </ul>
-<br/>
-<!-- Subtitle_2-->
-    <ul class="dotcom_title">
-        The Dotcom Bubble Burst
-    </ul>
-<!-- Text container-->
-    <ul>
+    </section>
+
+    <section class="bg-accent">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="./images/crash.jpg" alt="crash" width="700" height="400">
+            <h2 class = "text-center">The Dotcom Bubble Burst</h2>
+            <div class="split">
+                <div>
+                    <img src="./images/crash.jpg" alt="crash" width="700" height = "600"/>
                 </div>
-                <div class="col">
-                    <p class="dotcom_body">The bubble that formed over the five years fed by cheap money, easy capital, and pure speculation started to crash in early 2000
-                    because valuations were based on earnings and profits that would not occur for several years. If the business model actually worked,
-                    then investors were all too willing to overlook traditional fundamentals. But when the invested capital began to dry up, so did the
-                    lifeblood of cash-strapped dot-com companies. By the end of 2001, a majority of publicly traded dot-com companies folded, and trillions
-                    of dollars of investment capital evaporated. However, in the end, the companies that surged and survived are today’s giants such as –
-                    Amazon, eBay, Microsoft, Cisco, etc.<p/>
+                <div>
+                    <p>The bubble that formed over the five years fed by cheap money, easy capital, and pure speculation started to crash in early 2000
+                        because valuations were based on earnings and profits that would not occur for several years. If the business model actually worked,
+                        then investors were all too willing to overlook traditional fundamentals.</p>
+                    <p>But when the invested capital began to dry up, so did the
+                        lifeblood of cash-strapped dot-com companies. By the end of 2001, a majority of publicly traded dot-com companies folded, and trillions
+                        of dollars of investment capital evaporated. However, in the end, the companies that surged and survived are today’s giants such as –
+                        Amazon, eBay, Microsoft, Cisco, etc.</p>
                 </div>
             </div>
         </div>
-    </ul>
-<br/>
-<br/>
-<!-- Subtitle_3-->
-    <ul class="dotcom_title">
-        Benefits of the Dotcom Bubble
-    </ul>
-<!-- Text container-->
-    <ul>
-       <div class="container">
-           <div class="row">
-               <div class="col">
-                <img src="./images/cable.jpg" alt="cable" width="700" height="400">
-               </div>
-               <div class="col">
-                   <p class="dotcom_body">During this frenzy, many important tools were introduced within a short span of 4 - 5 years to keep up with the demand, one of them
-                   being Fiber Optics cable. Before the bubble burst Telecommunication companies wanted to get on the bandwagon by implementing and
-                   introducing fiber optic cable across the US, which would allow for the maturation of the internet. And because of a resulting excess
-                   of fiber in the years after the dot-com bubble burst, there was a severe overcapacity in bandwidth for internet usage that allowed
-                   the next wave of companies to deliver sophisticated new internet services. Empowering companies like Amazon, eBay, and Microsoft to grow significantly.<p/>
-               </div>
-           </div>
-       </div>
-    </ul>
-<br/>
-<br/>
+    </section>
+
+    <section  class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Benefits of the Dotcom Bubble</h2>
+            <div class="split">
+                <div>
+                    <p>During this frenzy, many important tools were introduced within a short span of 4 - 5 years to keep up with the demand, one of them
+                        being Fiber Optics cable. Before the bubble burst telecommunication companies wanted to get on the bandwagon by implementing and
+                        introducing fiber optic cable across the US, which would allow for the maturation of the internet.</p>
+                    <p>Because of a resulting excess of fiber in the years after the dot-com bubble burst, there was a severe overcapacity in bandwidth for internet usage that allowed
+                        the next wave of companies to deliver sophisticated new internet services. Empowering companies like Amazon, eBay, and Microsoft to grow significantly.</p>
+                </div>
+                <div>
+                    <img src="./images/cable.jpg" alt="cable" width="700" height = "600"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <!-- Adding a footer to the bottom of the page -->
-<footer class ="footer">
-    <p class="copyright">&#169;Jenie Kunnipparampil. All Rights Reserved. <img src="images/w3c.png" alt="validator"></p>
-</footer>
+    <footer>
+        <div class="container-footer">
+            <div id="footer">
+                <div id="footer-images">
+                    <ul style="margin-bottom: 0;">
+                        <li class="pull-center">&#169;Jenie Kunnipparampil. All Rights Reserved.</li>
+                        <li class="pull-right">
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fthejenieproject.eastus.azurecontainer.io%2Findex.html"><img src="images/w3c.png" alt="validator"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

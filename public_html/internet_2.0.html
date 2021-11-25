@@ -2,89 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<!-- Title-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title -->
     <title>Internet 2.0</title>
-<!-- css Stylesheet location-->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css Stylesheet location-->
     <link rel="stylesheet" href="css/style.css">
-<!-- Browser tab icon-->
+    <!-- Browser tab icon-->
     <link rel="icon" type="image/png" href="images/logo.png">
-<!-- CSS Code for the Navbar-->
+    <!-- CSS Code for the Navbar-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" style="font-size:20px; color:#ff8a00; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo" width="40" height="35"><b> Internet: Then vs Now</b></a>
-        <div class="navbar-collapse collapse show" id="navbarNav" style>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="history.html">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="dotcom_bubble.html">DOTcom Bubble</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="internet_2.0.html">Internet 2.0</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- CSS Code for the Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Navbar Javascript -->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
-<!-- Background color-->
-<body class="backg1">
-<!-- Page Title-->
-    <ul style="font-size:80px; color: #c24e00; text-align: center; padding-top: 20px;">
-        <div class="container-fluid"><b>Internet 2.0</b></div>
-    </ul>
-<!-- Subtitle_1-->
-    <ul class="internet2_title"><br/>
-        Participative and Social Web
-    </ul>
-<!-- Text container-->
-    <ul>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="./images/social.jpg" alt="social" width="700" height="400">
-            </div>
-            <div class="col">
-                <p class="internet2_body">In early 2000’s the world wide web was accessible in a very large scale which led to how world started changing the web.
-                    Because of the speed progress in e-commerce and connectivity People have really used it to their advantage to grow themselves on the internet.
-                    With the web 2.0 revolution lead by Hurley, Rose, and Adelson – YouTube, Facebook, blogs took dominance as the users decided what each other
-                    users voted for and wanted to see. Not just with YouTube or Facebook but with the advancement in social media platforms where broadcasting
-                    one’s life,interacting and sharing information is becoming the norm and it’s all available at your fingertips. <p/>
+<body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" style="font-size:20px; padding-left: 20px" class="active">the<b>JenieProject</b></a>
+        <!--
+            <a class="navbar-brand" style="font-size:20px; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo"><b>theJenieProject</b></a>
+        -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#">Internet Project</a>
+            <a href="index.html">&#x27A4; Internet: Then vs Now</a>
+            <a href="history.html">&#x27A4; History</a>
+            <a href="dotcom_bubble.html">&#x27A4; DOTcom Bubble</a>
+            <a href="internet_2.0.html">&#x27A4; Internet 2.0</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">Internet 2.0</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Participative and Social Web</h2>
+            <div class="split">
+                <div>
+                    <img src="./images/social.jpg" alt="social"/>
+                </div>
+                <div>
+                        <p>In early 2000’s the world wide web was accessible in a very large scale which led to how world started changing the web.
+                        Because of the speed progress in e-commerce and connectivity People have really used it to their advantage to grow themselves on the internet.
+                        With the web 2.0 revolution lead by Hurley, Rose, and Adelson – YouTube, Facebook, blogs took dominance as the users decided what each other
+                        users voted for and wanted to see. Not just with YouTube or Facebook but with the advancement in social media platforms where broadcasting
+                        one’s life,interacting and sharing information is becoming the norm and it’s all available at your fingertips. </p>
+                </div>
             </div>
         </div>
-    </div>
-    </ul>
-<br/>
-<br/>
-<!-- Subtitle_2-->
-    <ul class="internet2_title">
-        Concerns with the New Era Internet
-    </ul>
-<!-- Text container-->
-    <ul>
+    </section>
+
+    <section  class="bg-darkgrey">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="./images/security.jpg" alt="security" width="700" height="400">
+            <h2 class = "text-center">Concerns with the New Era Internet</h2>
+            <div class="split">
+                <div>
+                    <img src="./images/security.jpg" alt="security"/>
                 </div>
-                <div class="col">
-                    <p class="internet2_body">This new era of Internet is both revolutionizing and concerning as there are several issues that require
+                <div>
+                        <p>This new era of Internet is both revolutionizing and concerning as there are several issues that require
                         awareness and attention. Some of these issues include equal access, information control, intellectual property, copyright,
                         authorship, trust, privacy, and security. Hopefully with adequate regulatory policies and governance adapting these technologies
-                        in a more humanly integrated way is very plausible. <p/>
+                        in a more humanly integrated way is very plausible. </p>
                 </div>
             </div>
         </div>
-    </ul>
-<br/>
-<br/>
-<br/>
-<!-- Adding a footer to the bottom of the page -->
-        <footer class ="footer">
-            <p class="copyright">&#169;Jenie Kunnipparampil. All Rights Reserved. <img src="images/w3c.png" alt="validator"></p>
-        </footer>
+    </section>
+
+    <!-- Adding a footer to the bottom of the page -->
+    <footer>
+        <div class="container-footer">
+            <div id="footer">
+                <div id="footer-images">
+                    <ul style="margin-bottom: 0;">
+                        <li class="pull-center">&#169;Jenie Kunnipparampil. All Rights Reserved.</li>
+                        <li class="pull-right">
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fthejenieproject.eastus.azurecontainer.io%2Findex.html"><img src="images/w3c.png" alt="validator"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
