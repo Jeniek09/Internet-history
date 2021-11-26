@@ -61,6 +61,11 @@ A list of technologies used within the project:
 * [Azure for Students](https://portal.azure.com/#home)
     * Microsoft's public cloud computing platform that allows you to deploy a web application and make it available to your customers on the internet.
 
+## Reference
+***
+* [Responsive Webpage Design Tutorial](https://www.youtube.com/watch?v=bn-DQCifeQQ&list=WL&index=1&ab_channel=KevinPowell)
+* [Page footer](https://stackoverflow.com/questions/42742570/aligning-images-in-footer)
+
 ## What's Next?
 ***
 * Use data to create interactive graphs and models
