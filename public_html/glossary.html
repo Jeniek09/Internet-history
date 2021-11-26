@@ -2,9 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title -->
+    <title>Glossary</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css Stylesheet location-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Browser tab icon-->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- CSS Code for the Navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Code for the Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Navbar Javascript -->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
-+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" style="font-size:20px; padding-left: 20px" class="active">the<b>JenieProject</b></a>
+        <!--
+            <a class="navbar-brand" style="font-size:20px; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo"><b>theJenieProject</b></a>
+        -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#">Internet Project</a>
+            <a href="index.html">&#x27A4; Internet: Then vs Now</a>
+            <a href="history.html">&#x27A4; History</a>
+            <a href="dotcom_bubble.html">&#x27A4; DOTcom Bubble</a>
+            <a href="internet_2.0.html">&#x27A4; Internet 2.0</a>
+            <a href="#">Python Project</a>
+            <a href="python.html">&#x27A4; Python</a>
+            <a href="glossary.html">&#x27A4; Glossary</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">Glossary - Object Oriented (OO) Terminology/ Definitions</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section  class="bg-darkgrey">
+        <h2 style="padding-left: 50px;">OOP Terminology:</h2>
+        <ul style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+            <li style="text-align: justify;">
+                <p>
+                    <b>Instantiation:</b> Instantiating a class is creating a copy of the class which inherits all class variables and methods.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Object: </b> An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined.
+                    Therefore, no memory or storage is allocated.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Attributes: </b> also known as variables inside the class so that all objects created from that class would have these attributes by default.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Class: </b> can be considered as the blueprint or a bag for the object. It contains all the details about the methods
+                    and functionality so that every object created can access the class.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Base class: </b> Is the parent of the child classes created in the python.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Derived class: </b> Child class is the class that inherits from another class, and it also called derived class.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Methods: </b> are functions defined inside the body of a class. They are used to define the behaviors of an object.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Static method: </b> property or method that is not bound to instance, it is used to perform utility tasks in isolation.
+                    They have limited use because they don’t have access to the attributes of an object. Static method is defined by using the
+                    @staticmethod decorator or the staticmethod() function to define a static method.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Instance method: </b> The instance method acts on an object’s attributes; it is bound to the object of a class.
+                    It can modify the object state by changing the value of instance variables because it can access and modify both class and instance variable.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>Class method: </b> Used to access or modify the class state. It can modify the class state by changing the value of a class
+                    variable that would apply across all the class objects.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Namespace: </b> A namespace is basically a system to make sure that all the names in a program are unique and
+                    can be used without any conflict.  When a class definition is entered, a new namespace is created, and used as the
+                    local scope for all assignments to local variables go into this new namespace.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>Constructor: </b> Constructors are generally used for instantiating an object. The task of constructors is
+                    to initialize (assign values) to the members of the class when an object of the class is created. In Python the __init__()
+                    method is called the constructor and is always called when an object is created.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Adding a footer to the bottom of the page -->
+    <footer>
+        <div class="container-footer">
+            <div id="footer">
+                <div id="footer-images">
+                    <ul style="margin-bottom: 0;">
+                        <li class="pull-center">&#169;Jenie Kunnipparampil. All Rights Reserved.</li>
+                        <li class="pull-right">
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fthejenieproject.eastus.azurecontainer.io%2Findex.html"><img src="images/w3c.png" alt="validator"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
