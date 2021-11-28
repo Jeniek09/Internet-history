@@ -102,7 +102,13 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
+@media all and (max-width: 768px) {
+    img {
+        display: block;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+}
 /*****************************************************************************/
 .text-center {
     text-align: center;
