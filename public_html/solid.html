@@ -58,23 +58,27 @@
     </div>
     <header class="bg-header text-center">
         <div class="container container--narrow">
-            <h1 class="bg-header">OOP Principles</h1>
+            <h1 class="bg-header">S.O.L.I.D.</h1>
         </div>
     </header>
 
     <!-- Text container-->
     <section class="bg-accent">
         <div class="container">
-            <h2 class = "text-center">Object Oriented Programming</h2>
+            <h2 class = "text-center">SOLID Object Oriented Design</h2>
             <div class="split">
                 <div>
-                    <p style="margin-top: 5px;">An approach to designing and building applications that are flexible,
-                        natural, well-crafted, and testable by focusing on objects that interact
-                        efficiently with one another. It is a widely used programming concept that
-                        reduces development times—making it easier to read, reuse, and maintain your code.
+                    <p style="margin-top: 5px;">SOLID is an acronym for the five object-oriented design principles.
+                        These principles establish practices that help develop software with factors for
+                        maintaining and extending in the project. Incorporating these principles and practices
+                        one can avoid refactoring code, code smell and overall organize your code.
                     </p>
-                    <p style="margin-top: 5px;">There are four major principles that helps with clean object-oriented coding –
-                        Encapsulation, Abstractions, Inheritance and Polymorphism
+                    <p style="margin-top: 5px; margin-left: 50px">
+                        S : Single Responsibility Principle<br/>
+                        O : Open-Closed Principle<br/>
+                        L : Liskov Substitution Principle<br/>
+                        I : Interface Segregation Principle<br/>
+                        D : Dependency Inversion Principle<br/>
                     </p>
                 </div>
             </div>
@@ -83,21 +87,17 @@
 
     <section class="bg-darkgrey">
         <div class="container">
-            <h2 class = "text-center">Encapsulation</h2>
+            <h2 class = "text-center">Single Responsibility Principle (SRP)</h2>
             <div class="split">
                 <div>
-                    <p>It is a way to hide the information (or encapsulate) of the data and functions
-                        implementation details within a class, it means that when such object is instantiated
-                        that it will contain its properties and methods in that object
+                    <p>A function should perform one and only one task according to this principle.
                     </p>
-                    <p>Example: In the Calculator program, the class Calculation is an example of encapsulation
-                        as it encompasses all the data in the object; the instance properties
-                        (starting with “def __init__”) whenever calculation is instantiated
-                        these are the properties that will be independent, and this is called encapsulation.
+                    <p>Example: when calling static method, if the single responsibility rule is well established
+                        then it will return only one action upon calling that class.
                     </p>
                 </div>
                 <div>
-                    <img src="./images/encapsulation.PNG" alt="encapsulation"/>
+                    <img src="./images/srp.PNG" alt="srp"/>
                 </div>
             </div>
         </div>
@@ -105,21 +105,19 @@
 
     <section class="bg-accent">
         <div class="container">
-            <h2 class = "text-center">Abstraction</h2>
+            <h2 class = "text-center">Open/Closed Principle (OCP)</h2>
             <div class="split">
                 <div>
-                    <p>Abstraction in Object-Oriented Programming helps to reduce the complexity of the design
-                        and implementation process of software. It is the process of hiding the real implementation
-                        of an application from the user and showing only essential features. It is achieved by using
-                        abstract classes and methods. In a way an extension to encapsulation feature as Abstraction
-                        hides the implementation details.
+                    <p>Functions and classes should be open for extension and closed modification.
+                        Basically, one should be able to add on the function but not go and modify
+                        the code each time something gets added.
                     </p>
-                    <p>Example: In the calculator.py the class calculation is the blueprint for other class,
-                        it allows to create set of methods within any child classes built from the abstract (base) class.
+                    <p>Example: in the addition calculator test you can have a number (value_a) added to 0
+                        or add a bunch of numbers together (value_a + value_b…).
                     </p>
                 </div>
                 <div>
-                    <img src="./images/abstraction.PNG" alt="abstraction"/>
+                    <img src="./images/ocp.PNG" alt="ocp"/>
                 </div>
             </div>
         </div>
@@ -127,21 +125,20 @@
 
     <section class="bg-darkgrey">
         <div class="container">
-            <h2 class = "text-center">Polymorphism</h2>
+            <h2 class = "text-center">Liskov Substitution Principle (LSP)</h2>
             <div class="split">
                 <div>
-                    <p>Polymorphism defines the ability to take different forms. Meaning a single method can behave
-                        different depending on the type of object that calls it. It allows us to define methods in
-                        the child class with the same name as defined in their parent class.
+                    <p>Defines that object of a superclass shall be replaceable with objects
+                        of its subclasses without breaking the application.
                     </p>
-                    <p>Example:  In the Calculator program the built-in function len() calculates the length of an
-                        object depending upon its type. If an object is a string, it returns the count of characters,
-                        and if an object is a list, it returns the count of items in a list. In the calculator this
-                        was used to count the history of calculation.
+                    <p>Example: Example: in the calc folder the calculation.py this calculation class is
+                        extended in multiplication or subtraction calculation. Parent class should never
+                        depend on child class, but child class won’t be able to execute the result without
+                        the parent class.
                     </p>
                 </div>
                 <div>
-                    <img src="./images/polymorphism.PNG" alt="polymorphism"/>
+                    <img src="./images/lsp.PNG" alt="lsp"/>
                 </div>
             </div>
         </div>
@@ -149,20 +146,28 @@
 
     <section class="bg-accent">
         <div class="container">
-            <h2 class = "text-center">Inheritance</h2>
+            <h2 class = "text-center">Interface Segregation Principle (ISP)</h2>
             <div class="split">
                 <div>
-                    <p>A relationship between classes whereby child (or derived) classes inherit all the members
-                        of the parent (or base) class. Inheritance is a powerful feature in object-oriented programming
-                        as It refers to defining a new class with little or no modification to an existing class.
-                    </p>
-                    <p>Example:  In the calculator project – addition, subtraction, multiplication, and division
-                        are the child classes, and the calculation class is the parent class (Base class) as it
-                        provides functionality to child classes.
+                    <p>The goal is to not include any unwanted methods in an interface.
+                        Because declaring methods in an interface that the client doesn’t need pollutes
+                        the interface and leads to a “bulky” or “fat” interface, which will affect the readability and
+                        maintainability of the code.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">Dependency Inversion Principle (DIP)</h2>
+            <div class="split">
                 <div>
-                    <img src="./images/inheritance.PNG" alt="inheritance"/>
+                    <p>This principle or rule prevents your code from getting too tied up and makes is easier to reuse.
+                        The object of OOP is to make sure your code reusable and decency inversion is one way to achieve
+                        that goal
+                    </p>
                 </div>
             </div>
         </div>
