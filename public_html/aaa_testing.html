@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Page Title -->
+    <title>Python</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css Stylesheet location-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Browser tab icon-->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- CSS Code for the Navbar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Code for the Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Navbar Javascript -->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="index.html" style="font-size:20px; padding-left: 20px" class="active">the<b>JenieProject</b></a>
+        <!--
+            <a class="navbar-brand" style="font-size:20px; padding-left: 10px" href="index.html"><img src = "images/logo.png" alt="logo"><b>theJenieProject</b></a>
+        -->
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#">Internet Project</a>
+            <a href="index.html">&#x27A4; Home</a>
+            <a href="history.html">&#x27A4; History</a>
+            <a href="dotcom_bubble.html">&#x27A4; DOTcom Bubble</a>
+            <a href="internet_2.0.html">&#x27A4; Internet 2.0</a>
+            <a href="#">Python Project</a>
+            <a href="python.html">&#x27A4; Python</a>
+            <a href="glossary.html">&#x27A4; Glossary</a>
+            <a href="aaa_testing.html">&#x27A4; AAA Testing</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <header class="bg-header text-center">
+        <div class="container container--narrow">
+            <h1 class="bg-header">AAA Testing</h1>
+        </div>
+    </header>
+
+    <!-- Text container-->
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">Importance of Testing</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">Testing provides a practical feedback loop for development and shows how individual
+                        components of an application affects the results. Therefore, to conduct a thorough test of
+                        code we should follow the AAA testing pattern.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-darkgrey">
+        <div class="container">
+            <h2 class = "text-center">AAA Testing</h2>
+            <div class="split">
+                <div>
+                    <p style="margin-top: 5px;">Arrange-Act-Assert pattern is a constructive way to structure test cases to test the calculator code.
+                    <ul style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+                        <li style="text-align: justify;">
+                            <p>
+                                <b>Arrange:</b> it is the first step to start the testing process.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <b>Act: </b> The desired method which will be tested in this testing.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Assert: </b> is the expected outcome for the conducted test above in the act step.
+                            </p>
+                        </li>
+                    </ul>
+                    <img src="./images/aaa_testing.PNG" alt="aaa_testing" style="height: 250px; width: 500px; margin: auto;"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-accent">
+        <div class="container">
+            <h2 class = "text-center">AAA Testing Steps</h2>
+            <div class="split">
+                <div>
+                    <ol style="text-align: justify;padding-left: 50px;padding-right: 50px;font-size: 25px;">
+                        <li style="text-align: justify;">
+                            <p>
+                                For the calculator program as seen in the image, the first part of starting
+                                the testing is by instantiating the class (calc) in the code.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Followed by the main method/function that is to be tested to see if the calculator
+                                is interpreting the code correctly. In this case it was the addition method that is
+                                called to be tested in the Act step.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                And lastly to verify whether the expected answer/result is met, you insert the “assert”
+                                code and specify the anticipated answer. For the example mentioned, when adding
+                                value_a = 4 to base value 0 the expected answer should be 4.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                This AAA test was further tested with multiple values and for different
+                                operations such as multiplication, division, and subtraction.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Now to make sure that the syntax is maintained and is consistent throughout
+                                the program, after each input of code for the calculator it is recommended to
+                                conduct a “pytest –cov –pylint test”. Below is the image of the test coverage
+                                file report.
+                            </p>
+                        </li>
+                    </ol>
+                    <img src="./images/cov_file.PNG" alt="pylint_cov" style="height: 250px; width: 500px; margin: auto;"/>
+                    <p>
+                        Lastly, the code functionality of this calculator will be tested further with the
+                        csv data files with thousands of line items for each operation – addition, subtraction,
+                        multiplication, and division. And the same process of AAA testing will be applied to
+                        test its functionality.
+                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Adding a footer to the bottom of the page -->
+    <footer>
+        <div class="container-footer">
+            <div id="footer">
+                <div id="footer-images">
+                    <ul style="margin-bottom: 0;">
+                        <li class="pull-center">&#169;Jenie Kunnipparampil. All Rights Reserved.</li>
+                        <li class="pull-right">
+                            <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fthejenieproject.eastus.azurecontainer.io%2Findex.html"><img src="images/w3c.png" alt="validator"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
